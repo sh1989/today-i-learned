@@ -13,11 +13,11 @@ myModule.provider('aProvider', function() {
 
         return new function() {
 
-	    // This is a SERVICE
+	    	// This is a SERVICE
 
-	    this.doSomething = function() {
-	        return 'Hi!';
-	    };
+	    	this.doSomething = function() {
+	        	return 'Hi!';
+	    	};
         };
     };
 });
@@ -65,7 +65,7 @@ But within a `provider` function, you can use `$inject` (or the more verbose `['
 ```
 myModule.provider('aProvider', function() {
     this.$get = function($document) {
-        return new SuperService($document[0].body); // Just doing something with the injected dependency here...
+        return new SuperService($document[0].body); // Just doing something with the injected dependency here.
     };
     this.$get.$inject = ['$document'];
 });
