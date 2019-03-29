@@ -6,7 +6,7 @@ However, merge commits have two parent commits so you also need to tell git whic
 
 Running `git show <commit-hash>` on the merge commit will list the two parent commits, where:
 * The first parent commit was the head of the branch you merged TO
-* The second parent commit wass the head of the branch you merged FROM
+* The second parent commit was the head of the branch you merged FROM
 
 ```
         merge-commit
